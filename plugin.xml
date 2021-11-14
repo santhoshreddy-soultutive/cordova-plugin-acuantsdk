@@ -35,12 +35,6 @@
         <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
             <string>$MICROPHONE_USAGE_DESCRIPTION</string>
         </config-file>
-         <podspec>
-              <config></config>
-            <pods use-frameworks="true">
-                <pod name="AcuantiOSSDKV11" spec="~> 11.5.4" />
-            </pods>
-         </podspec>
         <source-file src="src/ios/Acuantsdk.swift" />
     </platform>
 </plugin>
