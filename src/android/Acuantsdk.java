@@ -1,4 +1,4 @@
-package com.acuant.sdk;
+package com.soultutive.cordova.plugins.acuantsdk;
 
 import android.app.Activity;
 import android.content.Intent;
