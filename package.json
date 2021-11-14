@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "name": "cordova-plugin-acuantsdk",
+  "cordova_name": "acuantsdk",
+  "description": "A plugin that helps to utilize acuant SDK features",
+  "cordova": {
+    "id": "cordova-plugin-acuantsdk",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "acuant SDK"
+  ],
+  "author": "###",
+  "license": ""
+}

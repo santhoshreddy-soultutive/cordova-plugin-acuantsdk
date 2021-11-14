@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-acuantsdk" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Cordova Aacuantsdk Plugin</name>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="acuantsdk">
+                <param name="android-package" value="com.acuant.sdk.Acuantsdk" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/Acuantsdk.java" target-dir="src/acuantsdk/Acuantsdk" />
+        <js-module name="acuantsdk" src="www/android/acuantsdk.js">
+            <clobbers target="cordova.plugins.acuantsdk" />
+        </js-module>
+    </platform>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="acuantsdk">
+                <param name="ios-package" value="com.acuant.sdk.Acuantsdk"/>
+            </feature>
+        </config-file>
+
+        <preference name="CAMERA_USAGE_DESCRIPTION" default="This app needs camera access"/>
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>$CAMERA_USAGE_DESCRIPTION</string>
+        </config-file>
+
+        <preference name="MICROPHONE_USAGE_DESCRIPTION" default="This app needs microphone access"/>
+        <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+            <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+        </config-file>
+         <podspec>
+              <config></config>
+            <pods use-frameworks="true">
+                <pod name="AcuantiOSSDKV11" spec="~> 11.5.4" />
+            </pods>
+         </podspec>
+        <source-file src="src/ios/Acuantsdk.swift" />
+        <dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
+    </platform>
+</plugin>
