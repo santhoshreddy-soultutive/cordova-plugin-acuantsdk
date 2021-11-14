@@ -11,7 +11,7 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/Acuantsdk.java" target-dir="src/acuantsdk/Acuantsdk" />
-        <js-module name="acuantsdk" src="www/android/acuantsdk.js">
+        <js-module name="acuantsdk" src="www/acuantsdk.js">
             <clobbers target="cordova.plugins.acuantsdk" />
         </js-module>
     </platform>
