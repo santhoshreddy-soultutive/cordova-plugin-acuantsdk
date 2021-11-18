@@ -6,7 +6,6 @@
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Acuantsdk">
                 <param name="android-package" value="Acuantsdk" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
