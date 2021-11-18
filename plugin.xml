@@ -43,8 +43,6 @@
         <source-file src="src/ios/BaseNavigationController.swift" />
         <source-file src="src/ios/CheckConnection.swift" />
         <source-file src="src/ios/FaceLivenessCameraController.swift" />
-        <source-file src="src/ios/File.swift" />
-        <source-file src="src/ios/Project-Bridging-Header.h" />
         <source-file src="src/ios/Utils.swift" />
     </platform>
 </plugin>
