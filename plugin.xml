@@ -12,14 +12,14 @@
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/Acuantsdk.java" target-dir="src/com/soultutive/cordova/plugins/acuantsdk/" />
         <js-module name="Acuantsdk" src="www/Acuantsdk.js">
-            <clobbers target="Acuantsdk" />
+            <merges target="window.cordova.plugins.acuantsdk" />
         </js-module>
     </platform>
 
     <platform name="ios">
-    <js-module name="Acuantsdk" src="www/Acuantsdk.js">
-		<clobbers target="Acuantsdk" />
-	</js-module>
+        <js-module name="Acuantsdk" src="www/Acuantsdk.js">
+            <merges target="window.cordova.plugins.acuantsdk" />
+        </js-module>
         <config-file target="config.xml" parent="/*">
             <feature name="Acuantsdk">
                 <param name="ios-package" value="Acuantsdk"/>
@@ -35,6 +35,16 @@
         <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
             <string>$MICROPHONE_USAGE_DESCRIPTION</string>
         </config-file>
+        <source-file src="src/ios/AcuantContext.swift" />
+        <source-file src="src/ios/AcuantProgressView.swift" />
+        <source-file src="src/ios/AcuantTokenService.swift" />
         <source-file src="src/ios/Acuantsdk.swift" />
+        <source-file src="src/ios/AlertView.swift" />
+        <source-file src="src/ios/BaseNavigationController.swift" />
+        <source-file src="src/ios/CheckConnection.swift" />
+        <source-file src="src/ios/FaceLivenessCameraController.swift" />
+        <source-file src="src/ios/File.swift" />
+        <source-file src="src/ios/Project-Bridging-Header.h" />
+        <source-file src="src/ios/Utils.swift" />
     </platform>
 </plugin>

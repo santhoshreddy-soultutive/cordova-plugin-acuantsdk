@@ -1,8 +1,29 @@
 {
-  "version": "1.0.0",
-  "name": "cordova-plugin-acuantsdk",
-  "cordova_name": "acuantsdk",
-  "description": "A plugin that helps to utilize acuant SDK features",
+  "_from": "git+https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git",
+  "_id": "cordova-plugin-acuantsdk@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-acuantsdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git",
+    "rawSpec": "https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git",
+    "saveSpec": "git+https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git",
+    "fetchSpec": "https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git#a06f111c663ca119fb6c80efb54f72fcdb959f67",
+  "_spec": "https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git",
+  "_where": "/Users/sreeprasantharammulpuri/ex/id/acuanttest",
+  "author": {
+    "name": "###"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-acuantsdk",
     "platforms": [
@@ -10,10 +31,14 @@
       "ios"
     ]
   },
+  "cordova_name": "acuantsdk",
+  "deprecated": false,
+  "description": "A plugin that helps to utilize acuant SDK features",
   "keywords": [
     "ecosystem:cordova",
     "acuant SDK"
   ],
-  "author": "###",
-  "license": ""
+  "license": "",
+  "name": "cordova-plugin-acuantsdk",
+  "version": "1.0.0"
 }

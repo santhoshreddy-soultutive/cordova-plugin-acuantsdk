@@ -1,0 +1,39 @@
+cordova create acuantsample com.soultutive.intellect.AcuantSample AcuantSample
+cd acuantsample
+
+copy www/*
+
+cordova platform add android
+cordova platform add ios@5.1.1
+
+cordova plugin add cordova-plugin-advanced-http
+cordova plugin add cordova-plugin-file
+cordova plugin add cordova-plugin-camera
+cordova plugin add cordova-plugin-compat
+cordova plugin add cordova-plugin-dialogs
+cordova plugin add cordova-plugin-network-information
+cordova plugin add cordova-plugin-spinner-dialog
+cordova plugin add cordova-plugin-x-toast
+
+copy iOSSDKv11-Acuant/Project/Plugin-Bridging-Header.h to platforms/ios/<ProjectName>/Classes
+copy iOSSDKv11-Acuant/Project/File.swift to platforms/ios/<ProjectName>/Classes
+copy iOSSDKv11-Acuant/Project/tessdata to platforms/ios/<ProjectName>/Images.xcassets
+copy iOSSDKv11-Acuant/Project/en.lproj to platforms/ios/<ProjectName>
+
+Create a directory in platforms/ios/EmbeddedFrameworks
+copy iOSSDKv11-Acuant/EmbeddedFramework/*.framework to platforms/ios/EmbdeddedFrameworks
+
+
+Open Project.xcodeproj
+
+Xcode menu > File > Add Files to "<Project>"
+
+Add 
+Classes/File.swift
+Classes/Plugin-Bridge-Header.h
+
+
+
+
+
+
