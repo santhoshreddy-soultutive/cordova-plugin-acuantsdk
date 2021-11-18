@@ -15,23 +15,84 @@ cordova plugin add cordova-plugin-network-information
 cordova plugin add cordova-plugin-spinner-dialog
 cordova plugin add cordova-plugin-x-toast
 
-copy iOSSDKv11-Acuant/Project/Plugin-Bridging-Header.h to platforms/ios/<ProjectName>/Classes
+
+STEP 1:
+
 copy iOSSDKv11-Acuant/Project/File.swift to platforms/ios/<ProjectName>/Classes
 copy iOSSDKv11-Acuant/Project/tessdata to platforms/ios/<ProjectName>/Images.xcassets
 copy iOSSDKv11-Acuant/Project/en.lproj to platforms/ios/<ProjectName>
+
+STEP 2:
 
 Create a directory in platforms/ios/EmbeddedFrameworks
 copy iOSSDKv11-Acuant/EmbeddedFramework/*.framework to platforms/ios/EmbdeddedFrameworks
 
 
-Open Project.xcodeproj
+STEP 3:
+Open <ProjectName>.xcodeproj
 
+STEP 4:
+Select Classes Folder
+
+STEP 5:
 Xcode menu > File > Add Files to "<Project>"
-
-Add 
+Choose the following files
 Classes/File.swift
 Classes/Plugin-Bridge-Header.h
 
+STEP 6:
+XCode will prompt to create Objective-C bridgning Header
+Select Create Bridiging Header
+
+STEP 7:
+In Classes/<ProjectName>-Bridging-Header.h
+Add the following lines
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import <Cordova/CDV.h>
+
+
+STEP 8:
+
+In Build Phases > Copy Bundle Resources
+
+Add en.lproj/Localizable.strings
+Add Image.xcassets/tessdata
+
+
+Step 9:
+
+In General > Frameworks, Libraries and Embedded Content
+
+Add EmbeddedFramework/*.xcframework
+
+AcuantCommon.xcframework
+AcuantHGLiveness.xcframework
+AcuantImagePreparation.xcframework
+iProov.xcframework
+SocketIO.xcframework
+Starscream.xcframework
+TesseractOCR.framework
+
+
+Add AcuantCamera/AcuantCamera.xcodeproj
+Add AcuantFaceCapture/AcuantFaceCapture.xcproj
+
+Ensure all are set to Embed & strings
+
+Step 10:
+
+In Build Settings
+
+Set Build Options > Validate Workspace - YES
+
+Step 11:
+
+Install plugin 
+
+cordova plugin add 
 
 
 
