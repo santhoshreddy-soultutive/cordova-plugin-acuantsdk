@@ -51,7 +51,7 @@ import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaWebView;
 import java.lang.Thread;
 
-import acuantsdk.Acuantsdk.LocalConstants;
+import  com.soultutive.cordova.plugins.acuantsdk.LocalConstants;
 
 /**
  * This class echoes a string called from JavaScript.
