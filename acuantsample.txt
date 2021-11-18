@@ -16,6 +16,9 @@ cordova plugin add cordova-plugin-spinner-dialog
 cordova plugin add cordova-plugin-x-toast
 
 
+STEP 0:
+Change Deployment Target to 11.0
+
 STEP 1:
 
 copy iOSSDKv11-Acuant/Project/File.swift to platforms/ios/<ProjectName>/Classes
@@ -74,11 +77,15 @@ AcuantImagePreparation.xcframework
 iProov.xcframework
 SocketIO.xcframework
 Starscream.xcframework
-TesseractOCR.framework
 
 
 Add AcuantCamera/AcuantCamera.xcodeproj
 Add AcuantFaceCapture/AcuantFaceCapture.xcproj
+
+Include
+
+AcuantCamera.framework
+AcuantFaceCapture.framework
 
 Ensure all are set to Embed & strings
 
@@ -92,7 +99,7 @@ Step 11:
 
 Install plugin 
 
-cordova plugin add 
+cordova plugin add https://github.com/santhoshreddy-soultutive/cordova-plugin-acuantsdk.git
 
 
 
