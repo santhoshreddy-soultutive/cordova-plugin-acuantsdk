@@ -10,7 +10,9 @@
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-        <source-file src="src/android/Acuantsdk.java" target-dir="src/com/soultutive/cordova/plugins/acuantsdk/" />
+        <source-file src="src/android/Acuantsdk.java" 
+        target-dir="src/com/soultutive/cordova/plugins/acuantsdk/" />
+        <source-file src="src/android/LocalConstants.java" target-dir="src/com/soultutive/cordova/plugins/acuantsdk/" />
         <js-module name="Acuantsdk" src="www/Acuantsdk.js">
             <merges target="window.cordova.plugins.acuantsdk" />
         </js-module>

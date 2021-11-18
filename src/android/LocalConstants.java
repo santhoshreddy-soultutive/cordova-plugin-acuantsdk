@@ -1,4 +1,4 @@
-package acuantsdk.Acuantsdk;
+package com.soultutive.cordova.plugins.acuantsdk;
 
 public class LocalConstants {
     public static final int REQUEST_CAMERA_PHOTO = 1;
