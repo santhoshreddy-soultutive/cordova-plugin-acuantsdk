@@ -5,7 +5,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Acuantsdk">
-                <param name="android-package" value="com.acuant.sdk.Acuantsdk" />
+                <param name="android-package" value="com.soultutive.cordova.plugins.acuantsdk.Acuantsdk" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
