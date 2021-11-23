@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-acuantsdk.Acuantsdk", function(require, exports, module) {
+//cordova.define("cordova-plugin-acuantsdk.Acuantsdk", function(require, exports, module) {
     var exec = require('cordova/exec');
     var _e = null;
     var createMask = function(){
@@ -27,7 +27,7 @@ cordova.define("cordova-plugin-acuantsdk.Acuantsdk", function(require, exports, 
             removeMask();
             error(result);
         }
-        exec(doSuccess, doError, 'acuantsdk', "scanDocument", [credentials]);
+        exec(doSuccess, doError, 'Acuantsdk', "scanDocument", [credentials]);
     };
     
     exports.takeSelfie = function (credentials, success, error) {
@@ -40,7 +40,7 @@ cordova.define("cordova-plugin-acuantsdk.Acuantsdk", function(require, exports, 
             removeMask();
             error(result);
         }
-        exec(doSuccess, doError, 'acuantsdk', "takeSelfie", [credentials]);
+        exec(doSuccess, doError, 'Acuantsdk', "takeSelfie", [credentials]);
     };
-});
+//});
     
